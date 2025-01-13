@@ -50,7 +50,7 @@ cursor = conn.cursor()
 #cursor.execute("select * from retail_orders.df1_order;")
 #cursor.execute("select * from retail_orders.df2_order;")
 
-"""for i, row in df_order1.iterrows():
+for i, row in df_order1.iterrows():
     cursor.execute("INSERT INTO df1_order (order_id, order_date, ship_mode,segment,country,city,state,postal_code,region,category)"
     " VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(row['order_id'], row['order_date'], row['ship_mode'],row['segment'],row['country'],row['city'],row['state'],row['postal_code'],
      row['region'],row['category']))
@@ -66,5 +66,5 @@ conn.commit()
 
 if(conn._execute_query):
     print("Inserted")
-conn.close()"""
+conn.close()
 
